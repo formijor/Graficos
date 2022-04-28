@@ -50,6 +50,7 @@ class GraficoDibujo(wx.Frame):
         self.spin2.SetRange(-1, 6)
         self.spin2.SetValue(-1)
         self.spin2.Bind(wx.EVT_SPIN, self.seleccionar_porcion)    
+
         
     def crear_boton_seleccionar_grafico(self):
         self.text3 = wx.TextCtrl(self.panel, pos= (600, 150), value='Clasico')

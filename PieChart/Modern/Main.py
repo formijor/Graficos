@@ -1,7 +1,7 @@
 '''
-Created on 24 mar. 2022
+Created on 26 mar. 2022
 
-@author: jor_l
+@author: Jorge
 '''
 
 import wx
@@ -11,7 +11,7 @@ import operator
 from Type import TipoGrafico
 from Segments.Portion import Porcion
 
-class ClassicPie():
+class Mod   ():
     def __init__(self, nombre, posicion, radio, datos, orientacion):
         self.nombre = nombre
         self.posicion = posicion
@@ -105,11 +105,11 @@ class ClassicPie():
     
     def crear_tipos_graficos(self):
         '''Crea las opciones de cada tipo de grafico'''
-        self.tipos_graficos = [TipoGrafico('Clasico', 
-                                        False, (255,255,255), 2,
-                                        False, (255,255,255), 2,
-                                        True, (255,255,255), 3,
-                                        (60,60,60), 0, None, 0)
+        self.tipos_graficos = [TipoGrafico('Moderno',
+                                          False, (255,255,255), 2,
+                                          False, (255,255,255), 2,
+                                          True, (255,255,255), 3,
+                                          (60,60,60), 10, None, 0)
                                          ]
         
     def seleccionar_color_relleno(self, indice):
